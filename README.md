@@ -6,11 +6,23 @@ Nodejs hall booking api task https://docs.google.com/document/d/1rwPQ2LbHtMZajA_
 </ hr>
 API Documentation
 
-1. Create Hall: POST- https://hall-b00king.herokuapp.com/hall ex:{ "name":"Hall-3", "amenities":["Ac","Refregirator","Swimming Pool"], "price":1000 }
+1. Create Hall: POST- https://hall-b00king.herokuapp.com/hall ex:{
+    room_id: 1,
+    room_name: "Room 1",
+    amenities: ["AC", "CCTV", "STAGE"],
+    noSeats: 100,
+    room_fee_perhour: 1500,
+  }
 
 2. View Halls: GET-https://hall-b00king.herokuapp.com/Halls
 
-3. Create Order: POST- https://hall-b00king.herokuapp.com/order ex: { "hallId":3, "customer":"Person3", "start":"12/16/2020", "end":"12/20/2020" }
+3. Create Order: POST- https://hall-b00king.herokuapp.com/order ex: {
+    room_id: 2,
+    customer_name: "Tripathi",
+    date: "14 Jan 2020",
+    startTime: "10:00am",
+    endTime: "15:00pm",
+  }
 
-4. view orders: GET-https://hall-b00king.herokuapp.com/Orders
+4. View Orders: GET-https://hall-b00king.herokuapp.com/Orders
 
